@@ -1,10 +1,10 @@
 // This is the horizontal movement speed of the character.
 // It's in pixels per second.
-move_speed = 12;
+move_speed = 10;
 
 // This is the friction value applied to the character's horizontal movement every frame.
 // This is applied in the Begin Step event. The friction is reduced when the character is in mid-air.
-friction_power = 0.7;
+friction_power = 0.9;
 
 // This is the jumping speed of the character.
 jump_speed = 23;
