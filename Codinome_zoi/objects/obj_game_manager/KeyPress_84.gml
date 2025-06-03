@@ -1,1 +1,1 @@
-room_goto(rm_level_3);
+game_end();

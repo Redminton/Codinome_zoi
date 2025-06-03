@@ -19,4 +19,4 @@ audio_stop_sound(snd_amb_trees);
 audio_stop_sound(snd_amb_wind);
 
 // Restore the leaf count for the leaves effect
-fx_set_parameter(effect_leaf, "param_num_particles", leaf_count);
+//fx_set_parameter(effect_leaf, "param_num_particles", leaf_count);
