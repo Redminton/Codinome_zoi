@@ -86,6 +86,7 @@
     {"id":{"name":"ft_button","path":"fonts/ft_button/ft_button.yy",},},
     {"id":{"name":"ft_hud","path":"fonts/ft_hud/ft_hud.yy",},},
     {"id":{"name":"Documentation","path":"notes/Documentation/Documentation.yy",},},
+    {"id":{"name":"obj_bala","path":"objects/obj_bala/obj_bala.yy",},},
     {"id":{"name":"obj_block_brick_destroy","path":"objects/obj_block_brick_destroy/obj_block_brick_destroy.yy",},},
     {"id":{"name":"obj_block_brick","path":"objects/obj_block_brick/obj_block_brick.yy",},},
     {"id":{"name":"obj_block_coins_hit_animtion","path":"objects/obj_block_coins_hit_animtion/obj_block_coins_hit_animtion.yy",},},
