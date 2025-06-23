@@ -18,7 +18,7 @@ if (vel_y > 0)
 		vel_y = -jump_speed;
 	
 		// Change the sprite to spr_player_jump as the player is now jumping (and not falling anymore).
-		sprite_index = spr_player_jump;
+		sprite_index = spr_player1_jump;
 		image_index = 0;
 	
 		// The animation speed at this point would be 0 if the fall animation had finished, so we reset
@@ -65,7 +65,7 @@ in_knockback = true;
 no_hurt_frames = 120;
 
 // This changes the sprite to the hurt sprite.
-sprite_index = spr_player_hurt;
+sprite_index = spr_player1_hurt;
 image_index = 0;
 
 // Set Alarm 0 to run after 15 frames; that event stops the player's horizontal velocity, ending the knockback

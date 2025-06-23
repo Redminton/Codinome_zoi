@@ -6,7 +6,7 @@ switch (sprite_index)
 {
 	// Code under this case runs if the assigned sprite is 'spr_player_jump', meaning
 	// the player was in the middle of a jump.
-	case spr_player_jump:
+	case spr_player1_jump:
 		// Since the animation has ended (which is why this event is running), we stop the animation
 		// by setting its speed to 0
 		image_speed = 0;
@@ -17,7 +17,7 @@ switch (sprite_index)
 
 	// Code under this case runs if the assigned sprite is 'spr_player_fall', meaning
 	// the player was falling downward.
-	case spr_player_fall:
+	case spr_player1_fall:
 		// Since the animation has ended (which is why this event is running), we stop the animation
 		// by setting its speed to 0
 		image_speed = 0;

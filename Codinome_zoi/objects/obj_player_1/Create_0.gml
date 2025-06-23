@@ -12,3 +12,5 @@ in_knockback = false;
 
 // This is the object that replaces the player once it is defeated.
 defeated_object = obj_player_defeated;
+/*
+player_visual = instance_create_layer(x, y, "Instances", obj_player_hitbox); */

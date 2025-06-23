@@ -7,7 +7,7 @@ event_inherited();
 switch (sprite_index)
 {
 	// Code under this case runs if the assigned sprite is 'spr_player_walk', meaning the player is walking.
-	case spr_player_walk:
+	case spr_player1_walk:
 		// Set the animation speed to 1, as it may have been set to 0 during the jump animation.
 		image_speed = 1;
 	
@@ -15,7 +15,7 @@ switch (sprite_index)
 		if (vel_x == 0)
 		{
 			// In that case we change its sprite to the idle one.
-			sprite_index = spr_player_idle;
+			sprite_index = spr_player1_idle;
 		}
 	
 		// This checks if the Y velocity of the player is greater than 1, meaning it is falling down.
@@ -23,18 +23,18 @@ switch (sprite_index)
 		if (vel_y > 1)
 		{
 			// In that case we change its sprite to the fall one, and reset the frame to 0.
-			sprite_index = spr_player_fall;
+			sprite_index = spr_player1_fall;
 			image_index = 0;
 		}
 		break;
 
 	// Code under this case runs if the assigned sprite is 'spr_player_jump', meaning the player was in the middle of a jump.
-	case spr_player_jump:
+	case spr_player1_jump:
 		// This checks if the Y velocity is equal to, or greater than 0, meaning the player has now started falling downward.
 		if (vel_y >= 0)
 		{
 			// In that case we change its sprite to the fall sprite, and reset the frame to 0.
-			sprite_index = spr_player_fall;
+			sprite_index = spr_player1_fall;
 			image_index = 0;
 		
 			// We also reset the animation speed to 1, as it was set to 0 at the end of the jump animation.
@@ -43,12 +43,12 @@ switch (sprite_index)
 		break;
 
 	// Code under this case runs if the assigned sprite is 'spr_player_fall', meaning the player was falling downward.
-	case spr_player_fall:
+	case spr_player1_fall:
 		// This checks if the player is now on the ground
 		if (grounded)
 		{
 			// In that case we change its sprite to the idle sprite.
-			sprite_index = spr_player_idle;
+			sprite_index = spr_player1_idle;
 		
 			// We also reset the animation speed to 1, as it was set to 0 at the end of the fall animation.
 			image_speed = 1;
@@ -59,7 +59,7 @@ switch (sprite_index)
 		break;
 
 	// Code under this case runs if the assigned sprite is 'spr_player_hurt', meaning the player is in the middle of a knockback.
-	case spr_player_hurt:
+	case spr_player1_hurt:
 		// This checks if the player is grounded, so the dust VFX can be created.
 		if (grounded)
 		{

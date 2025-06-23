@@ -36,3 +36,4 @@ function check_collision(_move_x, _move_y)
 	// In that case we return false, to indicate that no collisions were found, and the instance is free to move to the new position.
 	return false;
 }
+

@@ -1,18 +1,18 @@
 // Trocar jogador com TAB
 if (keyboard_check_pressed(vk_tab)) {
-    if (instance_exists(players[current_player])) {
-        players[current_player].active_player = false;
+    if (instance_exists(players[global.current_player])) {
+        players[global.current_player].active_player = false;
     }
 
-    current_player = (current_player + 1) mod array_length(players);
+    global.current_player = (global.current_player + 1) mod array_length(players);
 
-    if (instance_exists(players[current_player])) {
-        players[current_player].active_player = true;
+    if (instance_exists(players[global.current_player])) {
+        players[global.current_player].active_player = true;
     }
 }
 
 // Inputs globais direcionados ao jogador ativo
-var p = players[current_player];
+var p = players[global.current_player];
 if (instance_exists(p)) {
 
     if (keyboard_check(ord("A"))) {

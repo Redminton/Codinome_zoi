@@ -6,11 +6,14 @@ if (keyboard_check_pressed(vk_tab)) {
             fade_direction = 1;
             alpha = 0;
             trocou_camera = false;
+			
         }
     }
 }
 
-// Acompanhar o player atual
-if (instance_exists(current_target)) {
-    camera_set_view_pos(view_camera[0], current_target.x - view_wport[0]/2, current_target.y - view_hport[0]/2);
+// Acompanhar o player atual com ajuste vertical
+if (instance_exists( current_target)) {
+    var target_x =  current_target.x - view_wport[0] / 2;
+    var target_y =  current_target.y - view_hport[0] * 0.6;
+    camera_set_view_pos(view_camera[0], target_x, target_y);
 }

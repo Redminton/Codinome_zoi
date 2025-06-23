@@ -3,5 +3,5 @@
 in_knockback = false;
 
 // This changes the sprite back to the idle one, as the knockback would have been using the hurt sprite.
-sprite_index = spr_player_idle;
+sprite_index = spr_player2_idle;
 image_index = 0;
