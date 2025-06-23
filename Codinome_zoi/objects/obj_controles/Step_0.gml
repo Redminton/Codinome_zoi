@@ -32,11 +32,19 @@ if (instance_exists(p)) {
         var dir = point_direction(p.x, p.y, mouse_x, mouse_y);
         with (p) {
             // Cria a instância da bala na camada "Instances"
-            var bullet = instance_create_layer(x, y, "Instances", obj_bala);
+           var offset_x = lengthdir_x(0, image_angle);
+var offset_y = lengthdir_y(0, image_angle) - 20;
+   if (object_index == obj_player_1) {
+var bullet = instance_create_layer(x + offset_x, y + offset_y, "Instances", obj_bala1);
+   }
+   else if(object_index == obj_player_2) {
+	   var bullet = instance_create_layer(x + offset_x, y + offset_y, "Instances", obj_bala2);
+  
+   }
             
             // Define a direção (calculada para o mouse) e a velocidade da bala
             bullet.direction = dir;
-            bullet.speed = 18;
+            bullet.speed = 6;
             
             show_debug_message("Bala criada na direção: " + string(bullet.direction)); // Opcional: para debug
         }

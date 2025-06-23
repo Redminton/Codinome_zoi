@@ -13,7 +13,7 @@ if (x != obj_end_gate.x)
 
 	// This changes the sprite of the instance to the walking sprite, as the player is currently walking to the
 	// center of the gate.
-	sprite_index = spr_player_walk;
+	sprite_index = spr_player1_walk;
 
 	// This reduces the animation speed slightly as the player is supposed to be walking slower than usual.
 	image_speed = 0.7;
@@ -33,7 +33,7 @@ if (x != obj_end_gate.x)
 else
 {
 	// This changes the sprite to the idle sprite as the player is now standing.
-	sprite_index = spr_player_idle;
+	sprite_index = spr_player1_idle;
 
 	// This reduces the alpha of the instance, making it fade away.
 	image_alpha += -0.02;
@@ -45,6 +45,6 @@ else
 	if (image_alpha <= 0)
 	{
 		// In that case we move to the next room.
-		room_goto_next();
+		room_goto(rm_end);
 	}
 }

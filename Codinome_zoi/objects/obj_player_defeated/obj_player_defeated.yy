@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_hurt",
-    "path":"sprites/spr_player_hurt/spr_player_hurt.yy",
+    "name":"spr_player2_hurt",
+    "path":"sprites/spr_player2_hurt/spr_player2_hurt.yy",
   },
   "spriteMaskId":null,
   "visible":true,
