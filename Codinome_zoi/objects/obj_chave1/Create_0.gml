@@ -1,0 +1,1 @@
+chave_id = 1; // para chave 1
