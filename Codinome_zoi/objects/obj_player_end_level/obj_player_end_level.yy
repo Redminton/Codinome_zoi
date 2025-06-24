@@ -32,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_player2_walk",
-    "path":"sprites/spr_player2_walk/spr_player2_walk.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

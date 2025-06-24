@@ -31,3 +31,4 @@ if (layer_exists("EffectLeaf"))
 }
 
 window_set_fullscreen(true);
+global.final = 0;

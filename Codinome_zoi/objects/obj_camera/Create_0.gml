@@ -6,3 +6,5 @@ if (instance_exists(obj_player_1) && instance_exists(obj_player_2)) {
 }
 
 window_set_fullscreen(true);
+
+zoom_out_ativo = false;

@@ -42,9 +42,11 @@ else
 	image_speed = 1;
 
 	// This checks if the alpha is at or below 0, meaning the instance is invisible now.
-	if (image_alpha <= 0)
+	if (image_alpha <= 0) 
 	{
+		if(global.final >=2){
 		// In that case we move to the next room.
 		room_goto(rm_end);
+		}
 	}
 }
