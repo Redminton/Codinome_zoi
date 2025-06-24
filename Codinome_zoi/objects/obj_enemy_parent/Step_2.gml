@@ -44,3 +44,4 @@ if (_inst != noone)
 	// In that case the enemy turns.
 	vel_x = -vel_x;
 }
+

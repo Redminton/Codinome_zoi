@@ -4,7 +4,7 @@ event_inherited();
 defeated_object = obj_enemy1_defeated;
 
 // This sets the movement speed for this particular enemy.
-move_speed = 2;
+move_speed = 1;
 
 // This applies either move_speed or negative move_speed to the enemy's X velocity. This way the enemy will
 // either move left or right (at random).
